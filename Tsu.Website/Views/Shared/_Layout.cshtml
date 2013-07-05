@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+		@Styles.Render("~/Content/themes/tsu/css/jqueryuiBootstrap")
+		@Styles.Render("~/Content/bootstrap")
+		@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+			<header>
+				<div class="navbar navbar-fixed-top">
+					<div class="navbar-inner">
+						<div class="container">
+							<ul class="nav">
+								<li class="active"><a href="#"><span class="icon-home icon-white"></span>Home</a></li>
+								<li><a href="#"><span class="icon-folder-open icon-white"></span> Admission </a></li>
+								<li><a href="#"><span class="icon-list-alt icon-white"></span> Courses Offered </a></li>
+								<li><a href="#"><span class="icon-info-sign icon-white"></span> About </a></li>
+								<li><a href="#"><span class="icon-comment icon-white"></span> Contact </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			
+
+			<div id="body" class="container">
+				@RenderSection("featured", false)
+				<section>
+					@RenderBody()
+				</section>
+			</div>
+			<footer>
+				<div class="container">
+					@Html.Partial("_FooterLinks")
+					<div class="copyright">
+						<p class="pull-left">&copy; @DateTime.Now.Year - Management Information Systems Office </p>
+					</div>
+				</div>
+			</footer>
+        @Scripts.Render("~/bundles/jquery")
+		@Scripts.Render("~/bundles/bootstrap")
+		@Scripts.Render("~/bundles/jqueryui")
+		
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
