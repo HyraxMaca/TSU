@@ -21,6 +21,10 @@ namespace Tsu.Website
 			bundles.Add(new ScriptBundle("~/bundles/bootstrap")
 						.Include("~/Scripts/bootstrap.js"));
 
+			bundles.Add(new ScriptBundle("~/bundles/carousel")
+						.Include("~/Scripts/jquery.carouFredSel-6.0.4-packed.js",
+								 "~/Scripts/js/slideshows.js"));
+
 
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
 			// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

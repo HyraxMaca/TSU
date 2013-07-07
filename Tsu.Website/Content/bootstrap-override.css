@@ -18,10 +18,27 @@
 	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=-3,OffY=3,Color=#57000000,Positive=true);
 }
 
+.navbar-fixed-top .navbar-inner
+{
+	/* Firefox v3.5+ */
+	-moz-box-shadow:none;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-box-shadow:none;
+	/* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	box-shadow:none;
+}
+
+.navbar, .navbar-inner
+{
+	border-bottom:5px solid #ffc40d;
+}
+
 .navbar .nav > li a
 {
 	text-shadow:none;
 	color:#eee;
+	border-collapse:separate;
+	border-top:3px solid #660000;
 }
 
 
@@ -30,11 +47,18 @@
 .navbar .nav > .active > a:focus
 {
 	background-color:#ffc40d;
+	border-bottom:5px solid #ffc40d;
+	/* Firefox v3.5+ */
+	-moz-box-shadow:none;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-box-shadow:none;
+	/* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	box-shadow:none;
 }
 
 .navbar .nav > li a:hover
 {
-	border-top:4px solid #ffc40d;
+	border-top:3px solid #ffc40d;
 }
 
 
@@ -43,5 +67,15 @@
 ----------------------------------------------------------------------------------*/
 .hero-unit
 {
-	padding:40px;
+	padding:30px;
+	border: 1px solid #ddd;
+	background-color:#fff;
+	/* Firefox v3.5+ */
+	-moz-box-shadow: 0px 5px 32px rgba(0,0,0,0.38);
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-box-shadow: 0px 5px 32px rgba(0,0,0,0.38);
+	/* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	box-shadow: 0px 5px 32px rgba(0,0,0,0.38);
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=5,Color=#61000000,Positive=true)";
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=5,Color=#61000000,Positive=true);
 }

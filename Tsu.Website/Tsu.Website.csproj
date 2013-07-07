@@ -266,6 +266,22 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\Logos\fruit1.png" />
+    <Content Include="Images\Logos\fruit10.png" />
+    <Content Include="Images\Logos\fruit11.png" />
+    <Content Include="Images\Logos\fruit12.png" />
+    <Content Include="Images\Logos\fruit2.png" />
+    <Content Include="Images\Logos\fruit3.png" />
+    <Content Include="Images\Logos\fruit4.png" />
+    <Content Include="Images\Logos\fruit5.png" />
+    <Content Include="Images\Logos\fruit6.png" />
+    <Content Include="Images\Logos\fruit7.png" />
+    <Content Include="Images\Logos\fruit8.png" />
+    <Content Include="Images\Logos\fruit9.png" />
+    <Content Include="Images\SlideShow\ny1.jpg" />
+    <Content Include="Images\SlideShow\ny2.jpg" />
+    <Content Include="Images\SlideShow\ny3.jpg" />
+    <Content Include="Images\university.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -274,12 +290,14 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\jquery.carouFredSel-6.0.4-packed.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\slideshows.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
@@ -291,19 +309,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Scripts\_references.js" />
-    <Content Include="Images\accent.png" />
-    <Content Include="Images\bullet.png" />
-    <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\orderedList0.png" />
-    <Content Include="Images\orderedList1.png" />
-    <Content Include="Images\orderedList2.png" />
-    <Content Include="Images\orderedList3.png" />
-    <Content Include="Images\orderedList4.png" />
-    <Content Include="Images\orderedList5.png" />
-    <Content Include="Images\orderedList6.png" />
-    <Content Include="Images\orderedList7.png" />
-    <Content Include="Images\orderedList8.png" />
-    <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -323,6 +328,9 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_QuicklinksLower.cshtml" />
     <Content Include="Views\Shared\_FeaturedHome.cshtml" />
+    <Content Include="Views\Home\_AutoZoomSlideShow.cshtml" />
+    <Content Include="Views\Home\_BootstrapCarousel.cshtml" />
+    <Content Include="Views\Home\CoursesOffered.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

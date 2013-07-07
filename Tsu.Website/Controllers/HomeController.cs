@@ -28,5 +28,10 @@ namespace Tsu.Website.Controllers
 
 			return View();
 		}
+
+		public ActionResult CoursesOffered()
+		{
+			return View();
+		}
 	}
 }

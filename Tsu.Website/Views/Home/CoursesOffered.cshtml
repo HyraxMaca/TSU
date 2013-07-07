@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "CoursesOffered";
+}
+
+<div class="featured">
+	<div class="hero-unit">
+		<div class="row">
+			<div class="span3 offset1">
+				<h3> Lucinda </h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+				</p>
+			</div>
+			<div class="span3">
+				<h3> Main </h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				</p>
+			</div>
+			<div class="span3">
+				<h3> San Isidro </h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				</p>
+			</div>
+		</div>
+		@Html.Partial("_LogoCarousel")
+	</div>
+</div>
+
+
+
+@section scripts
+{
+	@Scripts.Render("~/bundles/carousel")
+}

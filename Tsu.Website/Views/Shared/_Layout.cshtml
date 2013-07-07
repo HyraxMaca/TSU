@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>@ViewBag.Title - Tarlac State University</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
 		@Styles.Render("~/Content/themes/tsu/css/jqueryuiBootstrap")
@@ -16,9 +16,9 @@
 					<div class="navbar-inner">
 						<div class="container">
 							<ul class="nav">
-								<li class="active"><a href="#"><span class="icon-home icon-white"></span>Home</a></li>
+								<li><a href="@Url.Action("Index", "Home")"><span class="icon-home icon-white"></span>Home</a></li>
 								<li><a href="#"><span class="icon-folder-open icon-white"></span> Admission </a></li>
-								<li><a href="#"><span class="icon-list-alt icon-white"></span> Courses Offered </a></li>
+								<li><a href="@Url.Action("CoursesOffered", "Home")"><span class="icon-list-alt icon-white"></span> Courses Offered </a></li>
 								<li><a href="#"><span class="icon-info-sign icon-white"></span> About </a></li>
 								<li><a href="#"><span class="icon-comment icon-white"></span> Contact </a></li>
 							</ul>
