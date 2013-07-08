@@ -1,19 +1,34 @@
-﻿<div id="wrapper">
+﻿@*
+
+	Dependency...
+
+	ViewBag.ImagePath - path of the images on the carousel
+
+----------------------------------------------------------------------------
+*@
+
+@{
+	string imagePath = (string)ViewBag.ImagePath;
+}
+
+<div id="wrapper">
 	<div id="logo-carousel">
 		<div>
-			<img src="~/Images/Logos/fruit1.png" alt="fruit1" width="200" height="200" />
+			<a href="@Url.Action("CoursesOffered", "Home")">
+				<img src="@Path.Combine(imagePath, "fruit1.png")" alt="fruit1" width="200" height="200" />
+			</a>
 			<span>Apple</span>
 		</div>
 		<div>
-			<img src="~/Images/Logos/fruit2.png" alt="fruit2" width="200" height="200" />
+			<img src="@Path.Combine(imagePath, "fruit2.png")" alt="fruit2" width="200" height="200" />
 			<span>Mandarin</span>
 		</div>
 		<div>
-			<img src="~/Images/Logos/fruit3.png" alt="fruit3" width="200" height="200" />
+			<img src="@Path.Combine(imagePath, "fruit3.png")" alt="fruit3" width="200" height="200" />
 			<span>Banannas</span>
 		</div>
 		<div>
-			<img src="~/Images/Logos/fruit4.png" alt="fruit4" width="200" height="200" />
+			<img src="@Path.Combine(imagePath, "fruit4.png")" alt="fruit4" width="200" height="200" />
 			<span>Cherries</span>
 		</div>
 		<div>

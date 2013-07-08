@@ -10,8 +10,6 @@ namespace Tsu.Website.Controllers
 	{
 		public ActionResult Index()
 		{
-			ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-
 			return View();
 		}
 
@@ -31,6 +29,9 @@ namespace Tsu.Website.Controllers
 
 		public ActionResult CoursesOffered()
 		{
+			// path of the images on the carousel.
+			ViewBag.ImagePath = "/Images/Logos/";
+
 			return View();
 		}
 	}

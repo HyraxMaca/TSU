@@ -331,6 +331,7 @@
     <Content Include="Views\Home\_AutoZoomSlideShow.cshtml" />
     <Content Include="Views\Home\_BootstrapCarousel.cshtml" />
     <Content Include="Views\Home\CoursesOffered.cshtml" />
+    <Content Include="Views\Home\_LogoCarousel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

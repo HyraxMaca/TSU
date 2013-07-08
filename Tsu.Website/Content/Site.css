@@ -1,11 +1,27 @@
 ﻿body
 {
 	background:url("images/patterns/cream_pixels.png") repeat;
+	height:100%;
+}
+
+/* Navigation Settings
+----------------------------------------------------------------------*/
+#nav-container
+{
+	padding-left:190px;
+}
+
+#tsu-logo
+{
+	position:absolute;
+	margin-left:-150px;
+	margin-top:-10px;
+
 }
 
 .featured
 {
-	margin-top:100px;
+	margin-top:60px;
 	margin-bottom:20px;
 	border-bottom:5px solid #ffc40d;
 }
