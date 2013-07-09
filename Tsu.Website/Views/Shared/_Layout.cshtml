@@ -18,7 +18,7 @@
 							<a id="tsu-logo" class="brand" href="@Url.Action("Index", "Home")">
 								<img src="~/Images/Logos/tsu-logo.png" />
 							 </a>
-							<ul class="nav">
+							<ul id="nav-header" class="nav">
 								<li class="active"><a href="@Url.Action("Index", "Home")"><span class="icon-home icon-white"></span>Home</a></li>
 								<li><a href="#"><span class="icon-folder-open icon-white"></span> Admission </a></li>
 								<li><a href="@Url.Action("CoursesOffered", "Home")"><span class="icon-list-alt icon-white"></span> Courses Offered </a></li>
@@ -26,7 +26,8 @@
 								<li><a href="#"><span class="icon-comment icon-white"></span> Contact </a></li>
 							</ul>
 
-							<form class="form-search pull-right">
+							<form id="form-search-header" class="form-search pull-right">
+								<label> Search </label>
 								<input type="text" class="search-query" />
 							</form>
 						</div>
@@ -38,17 +39,12 @@
 
 			<div id="body" class="container">
 				@RenderSection("featured", false)
-				<section>
-					@RenderBody()
-				</section>
+				@RenderBody()
 			</div>
+			
+			@RenderSection("otherFeatured", false)
 			<footer>
-				<div class="container">
-					@Html.Partial("_FooterLinks")
-					<div class="copyright">
-						<p class="pull-left">&copy; @DateTime.Now.Year - Management Information Systems Office </p>
-					</div>
-				</div>
+				@Html.Partial("_Footer")
 			</footer>
         @Scripts.Render("~/bundles/jquery")
 		@Scripts.Render("~/bundles/bootstrap")

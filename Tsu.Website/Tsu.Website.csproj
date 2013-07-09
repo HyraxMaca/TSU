@@ -278,6 +278,8 @@
     <Content Include="Images\Logos\fruit7.png" />
     <Content Include="Images\Logos\fruit8.png" />
     <Content Include="Images\Logos\fruit9.png" />
+    <Content Include="Images\Logos\transparency-logo.png" />
+    <Content Include="Images\Logos\tsu-logo.PNG" />
     <Content Include="Images\SlideShow\ny1.jpg" />
     <Content Include="Images\SlideShow\ny2.jpg" />
     <Content Include="Images\SlideShow\ny3.jpg" />
@@ -332,6 +334,7 @@
     <Content Include="Views\Home\_BootstrapCarousel.cshtml" />
     <Content Include="Views\Home\CoursesOffered.cshtml" />
     <Content Include="Views\Home\_LogoCarousel.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
