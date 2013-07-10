@@ -25,6 +25,9 @@ namespace Tsu.Website
 						.Include("~/Scripts/jquery.carouFredSel-6.0.4-packed.js",
 								 "~/Scripts/js/slideshows.js"));
 
+			bundles.Add(new ScriptBundle("~/bundles/sitejs").Include(
+						"~/Scripts/js/site.js"));
+
 
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
 			// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

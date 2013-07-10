@@ -17,10 +17,12 @@
 	margin:30px 0px;
 }
 
+.indent { text-indent:30px; }
+.justify{ text-align:justify; }
 
 
 
-/*
+/*  Global Settings
 ------------------------------------------------------------------------------------------------------*/
 
 
@@ -28,7 +30,16 @@ body
 {
 	background:url("images/patterns/cream_pixels.png") repeat;
 	height:100%;
+	font-size:12px;
 }
+
+hr
+{
+	border:2px solid #660000;
+}
+
+
+
 
 /* Navigation Settings
 ----------------------------------------------------------------------*/
@@ -57,14 +68,33 @@ body
 }
 
 
+.sidenav-wrapper
+{
+	border-left:1px solid #ccc;
+	margin-left:70px;
+	position:static;
+	float:right;
+	height:100%;
+}
+
+.sidenav-container
+{
+	background: rgb(230, 230, 230); /* Fall-back for browsers that don't support rgba */
+    background: rgba(230, 230, 230, .5);
+}
+
+
+
 /* Contents
 -----------------------------------------------------------------------*/
+#body
+{
+	margin-top:45px;
+}
 
 .featured
 {
-	margin-top:45px;
 	margin-bottom:20px;
-	border-bottom:5px solid #ffc40d;
 }
 
 .other-featured
@@ -93,6 +123,7 @@ footer
 	color:#ccc;
 	border-top:5px solid #ffc40d;
 	margin-top:50px;
+	width:100%;
 }
 
 
@@ -103,14 +134,21 @@ footer
 
 ul.footer-link
 {
-	text-decoration:none;
 	list-style-type:none;
+	
 	font-size:13px;
 }
 
 	ul.footer-link a
 	{
 		color:#ccc!important;
+		text-decoration:none;
+	}
+
+	ul.footer-link a:hover
+	{
+		color:#ccc!important;
+		border-bottom:1px dotted #ccc;
 	}
 
 	ul.footer-link .footer-link-header
@@ -168,7 +206,6 @@ footer img
 }
 #logo-carousel div img {
 	border: none;
-	width: 100%;
 	height: auto;
 }
 #logo-carousel div span {

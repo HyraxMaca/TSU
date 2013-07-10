@@ -166,6 +166,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="ExtensionMethods\HtmlHelperMethods.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -265,6 +266,7 @@
     <Content Include="Content\themes\tsu\jquery-ui-1.9.2.ie.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="App_Code\Navbar.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Images\Logos\fruit1.png" />
     <Content Include="Images\Logos\fruit10.png" />
@@ -299,6 +301,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\site.js" />
     <Content Include="Scripts\js\slideshows.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
@@ -335,6 +338,8 @@
     <Content Include="Views\Home\CoursesOffered.cshtml" />
     <Content Include="Views\Home\_LogoCarousel.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Home\NewsAndEvents.cshtml" />
+    <Content Include="Views\Home\Admission.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

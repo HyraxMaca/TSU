@@ -34,5 +34,15 @@ namespace Tsu.Website.Controllers
 
 			return View();
 		}
+
+		public ActionResult NewsAndEvents()
+		{
+			return View();
+		}
+
+		public ActionResult Admission()
+		{
+			return View();
+		}
 	}
 }

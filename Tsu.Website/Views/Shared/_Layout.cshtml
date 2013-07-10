@@ -1,55 +1,67 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - Tarlac State University</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-		@Styles.Render("~/Content/themes/tsu/css/jqueryuiBootstrap")
-		@Styles.Render("~/Content/bootstrap")
-		@Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-			<header>
-				<div class="navbar navbar-fixed-top">
-					<div class="navbar-inner">
-						<div id="nav-container" class="container">
-							<a id="tsu-logo" class="brand" href="@Url.Action("Index", "Home")">
-								<img src="~/Images/Logos/tsu-logo.png" />
-							 </a>
-							<ul id="nav-header" class="nav">
-								<li class="active"><a href="@Url.Action("Index", "Home")"><span class="icon-home icon-white"></span>Home</a></li>
-								<li><a href="#"><span class="icon-folder-open icon-white"></span> Admission </a></li>
-								<li><a href="@Url.Action("CoursesOffered", "Home")"><span class="icon-list-alt icon-white"></span> Courses Offered </a></li>
-								<li><a href="#"><span class="icon-info-sign icon-white"></span> About </a></li>
-								<li><a href="#"><span class="icon-comment icon-white"></span> Contact </a></li>
-							</ul>
+<head>
+	<meta charset="utf-8" />
+	<title>Tarlac State University @ViewBag.Title </title>
+	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width" />
+	@Styles.Render("~/Content/themes/tsu/css/jqueryuiBootstrap")
+	@Styles.Render("~/Content/bootstrap")
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+	<header>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div id="nav-container" class="container">
+					<a id="tsu-logo" class="brand" href="@Url.Action("Index", "Home")">
+						<img src="~/Images/Logos/tsu-logo.png" />
+					</a>
+					<ul id="nav-header" class="nav offset1">
+						<li class="active"><a href="@Url.Action("Index", "Home")"><span class="icon-home icon-white"></span>Home</a></li>
+						<li><a href="@Url.Action("Admission", "Home")"><span class="icon-folder-open icon-white"></span>Admission </a></li>
+						<li><a href="@Url.Action("CoursesOffered", "Home")"><span class="icon-list-alt icon-white"></span>Courses Offered </a></li>
+						<li><a href="#"><span class="icon-info-sign icon-white"></span>About </a></li>
+						<li><a href="#"><span class="icon-comment icon-white"></span>Contact </a></li>
+					</ul>
 
-							<form id="form-search-header" class="form-search pull-right">
-								<label> Search </label>
-								<input type="text" class="search-query" />
-							</form>
-						</div>
-					</div>
+					<form id="form-search-header" class="form-search pull-right">
+						<label>Search </label>
+						<input type="text" class="search-query" />
+					</form>
 				</div>
-			</header>
-
-			
-
-			<div id="body" class="container">
-				@RenderSection("featured", false)
-				@RenderBody()
 			</div>
-			
+		</div>
+	</header>
+
+
+
+	<div id="body" class="container">
+		@if (IsSectionDefined("featured"))
+		{
+			<div class="featured">
+				@RenderSection("featured", false)
+			</div>
+		}
+
+		@RenderBody()
+	</div>
+
+	@if (IsSectionDefined("otherFeatured"))
+	{
+		<div class="other-featured">
 			@RenderSection("otherFeatured", false)
-			<footer>
-				@Html.Partial("_Footer")
-			</footer>
-        @Scripts.Render("~/bundles/jquery")
-		@Scripts.Render("~/bundles/bootstrap")
-		@Scripts.Render("~/bundles/jqueryui")
-		
-        @RenderSection("scripts", required: false)
-    </body>
+		</div>
+	}
+
+	<footer>
+		@Html.Partial("_Footer")
+	</footer>
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@Scripts.Render("~/bundles/jqueryui")
+	@Scripts.Render("~/bundles/sitejs")
+	@RenderSection("scripts", required: false)
+</body>
 </html>

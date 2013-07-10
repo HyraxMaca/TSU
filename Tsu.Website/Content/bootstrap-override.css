@@ -85,9 +85,11 @@ small
 
 /* hero-unit
 ----------------------------------------------------------------------------------*/
-.hero-unit
+.hero-unit, .content
 {
+	font-size:14px;
 	padding:30px;
+	padding-top:20px;
 	border: 1px solid #ddd;
 	background-color:#fff;
 	/* Firefox v3.5+ */
@@ -99,3 +101,15 @@ small
 	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=5,Color=#61000000,Positive=true)";
 	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=5,Color=#61000000,Positive=true);
 }
+
+	.hero-unit h1,
+	.hero-unit h2,
+	.hero-unit h3,
+	.hero-unit h4,
+	.hero-unit h5,
+	.hero-unit h6
+	{
+		line-height:30px;
+		margin-bottom:30px;
+	}
+
