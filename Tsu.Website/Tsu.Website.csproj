@@ -268,6 +268,7 @@
     <Content Include="Global.asax" />
     <Content Include="App_Code\Navbar.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\Logos\cass.PNG" />
     <Content Include="Images\Logos\fruit1.png" />
     <Content Include="Images\Logos\fruit10.png" />
     <Content Include="Images\Logos\fruit11.png" />
@@ -280,8 +281,14 @@
     <Content Include="Images\Logos\fruit7.png" />
     <Content Include="Images\Logos\fruit8.png" />
     <Content Include="Images\Logos\fruit9.png" />
+    <Content Include="Images\Logos\miso-logo.png" />
+    <Content Include="Images\Logos\philgeps-logo.jpg" />
     <Content Include="Images\Logos\transparency-logo.png" />
+    <Content Include="Images\Logos\transparency-seal-logo.jpg" />
     <Content Include="Images\Logos\tsu-logo.PNG" />
+    <Content Include="Images\NewsAndEvents\News1.jpg" />
+    <Content Include="Images\NewsAndEvents\News2.jpg" />
+    <Content Include="Images\NewsAndEvents\News3.jpg" />
     <Content Include="Images\SlideShow\ny1.jpg" />
     <Content Include="Images\SlideShow\ny2.jpg" />
     <Content Include="Images\SlideShow\ny3.jpg" />

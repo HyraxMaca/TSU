@@ -31,7 +31,7 @@ small
 */
 .navbar-fixed-top
 {
-	position:static;
+	position:fixed;
 }
 
 .navbar-fixed-top .navbar-inner
