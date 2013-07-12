@@ -172,7 +172,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\CoursesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -348,15 +350,18 @@
     <Content Include="Views\Home\_LogoCarousel.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Home\NewsAndEvents.cshtml" />
-    <Content Include="Views\Home\Admission.cshtml" />
-    <Content Include="Views\Admission\_RequirementsTab.cshtml" />
+    <Content Include="Views\Admission\_TestRequirementsTab.cshtml" />
     <Content Include="Views\Admission\_ResultsTab.cshtml" />
     <Content Include="Views\Admission\_ApplicationTab.cshtml" />
     <Content Include="Views\Admission\_ExaminationTab.cshtml" />
     <Content Include="Views\Admission\Index.cshtml" />
+    <Content Include="Views\Admission\_PoliciesRequirementsTab.cshtml" />
+    <Content Include="Views\Admission\_CoursesOffered.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Infrastructure\Abstract\" />
+    <Folder Include="Infrastructure\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
