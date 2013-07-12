@@ -1,0 +1,41 @@
+﻿@{
+	ViewBag.Title = "Index";
+}
+
+@{
+	ViewBag.Title = "Admission";
+}
+
+@section featured
+{
+	<div class="content">
+		<h3>Getting Admitted </h3>
+		<br />
+
+		<div class="row">
+			<div class="span2">
+				<div class="tabbable tabs-left tab-spy">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#requirements" data-toggle="tab">Requirements</a></li>
+						<li><a href="#application" data-toggle="tab">Application </a></li>
+						<li><a href="#examination" data-toggle="tab">Examination </a></li>
+						<li><a href="#results" data-toggle="tab">Results </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="span9">
+				<div class="tab-content">
+					@Html.Partial("_RequirementsTab")
+					@Html.Partial("_ApplicationTab")
+					@Html.Partial("_ExaminationTab")
+					@Html.Partial("_ResultsTab")
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+}
+

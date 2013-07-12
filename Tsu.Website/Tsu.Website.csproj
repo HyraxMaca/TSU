@@ -165,6 +165,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdmissionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="ExtensionMethods\HtmlHelperMethods.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -348,7 +349,11 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Home\NewsAndEvents.cshtml" />
     <Content Include="Views\Home\Admission.cshtml" />
-    <Content Include="Views\Home\_AdmissionRequirementsTab.cshtml" />
+    <Content Include="Views\Admission\_RequirementsTab.cshtml" />
+    <Content Include="Views\Admission\_ResultsTab.cshtml" />
+    <Content Include="Views\Admission\_ApplicationTab.cshtml" />
+    <Content Include="Views\Admission\_ExaminationTab.cshtml" />
+    <Content Include="Views\Admission\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
