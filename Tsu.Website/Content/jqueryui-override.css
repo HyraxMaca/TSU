@@ -1,0 +1,13 @@
+﻿
+/*  Override Stylesheet for jQueryUI + Bootstrap
+------------------------------------------------------------------*/
+
+.ui-icon
+{
+	margin:2px;
+}
+
+.ui-state-highlight
+{
+	padding:4px;
+}

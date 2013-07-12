@@ -41,7 +41,8 @@ namespace Tsu.Website
 			bundles.Add(new StyleBundle("~/Content/bootstrap")
 					.Include("~/Content/bootstrap-responsive.css",
 								"~/Content/bootstrap-tsu.css",
-								"~/Content/bootstrap-override.css"));
+								"~/Content/bootstrap-override.css",
+								"~/Content/jqueryui-override.css"));
 
 			bundles.Add(new StyleBundle("~/Content/themes/tsu/css/jqueryuiBootstrap")
 					.Include("~/Content/themes/tsu/jquery-ui-1.10.0.ie.css",
