@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Tsu.Website.Models
+@model IEnumerable<CampusModel>
+
+@{
 	ViewBag.Title = "Index";
 }
 
@@ -22,39 +25,49 @@
 						<li><a href="#examination" data-toggle="tab">Examination </a></li>
 						<li><a href="#results" data-toggle="tab">Results </a></li>
 						<li><a href="#policies-requirements" data-toggle="tab"> Policies/Requirements </a></li>
-						<li><a href="#courses" data-toggle="tab"> Courses </a></li>
 					</ul>
 				</div>
+				<ul class="nav nav-list">
+					<li class="nav-header">Courses Offered </li>
+					<li><a href="#MainCampusCoursesModal" data-toggle="modal" data-target="#MainCampusCoursesModal"> Main </a></li>
+					<li><a href="#LucindaCampusCoursesModal" data-toggle="modal" data-target="#LucindaCampusCoursesModal"> Lucinda </a></li>
+					<li><a href="#SanIsidroCampusCoursesModal" data-toggle="modal" data-target="#SanIsidroCampusCoursesModal"> San Isidro </a></li>
+				</ul>
 			</div>
 
 			<div class="span9">
-				<div class="tab-content">
+				<div class="tab-content admission-tabs">
 					@Html.Partial("_TestRequirementsTab")
 					@Html.Partial("_ApplicationTab")
 					@Html.Partial("_ExaminationTab")
 					@Html.Partial("_ResultsTab")
 					@Html.Partial("_PoliciesRequirementsTab")
-					<div id="courses" class="tab-pane">
-						@Html.Partial("_CoursesOffered")
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
 }
 
-@section scripts
-{
-	<script type="text/javascript">
-		$(function ()
-		{
-			$("#campus-accordion").accordion({
-				header : "h4"
-			});
-		});
-	</script>
+
+ 
+<!-- Modals of Courses Offered by Campuses -->
+@{
+	var mainCampus = Model.FirstOrDefault(campus => campus.Name == "Main Campus");
+	var lucindaCampus = Model.FirstOrDefault(campus => campus.Name == "Lucinda Campus");
+	var sanIsidroCampus = Model.FirstOrDefault(campus => campus.Name == "San Isidro Campus");
 }
+
+<!-- Main Campus -->
+@Html.Partial("_MainCampusCoursesModal", mainCampus)
+
+<!-- Lucinda Campus -->
+@Html.Partial("_LucindaCampusCoursesModal", lucindaCampus)
+
+<!-- San Isidro Campus -->
+@Html.Partial("_SanIsidroCampusCoursesModal", sanIsidroCampus)
+
+
+
+
+
 

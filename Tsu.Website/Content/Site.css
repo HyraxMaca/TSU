@@ -40,7 +40,7 @@ hr
 }
 
 
-ol li
+.admission-tabs ol li
 {
 	padding:5px;
 }
@@ -89,7 +89,7 @@ ol li
 }
 
 
-.tabbable ul
+.nav
 {
 	font-size:12px;
 }
@@ -205,7 +205,7 @@ footer img
 	position: static;
 	left: 0;
 	bottom: 0;
-	margin-top:50px;
+	margin-top:80px;
 }
 #logo-carousel {
 	margin-top: -60px;

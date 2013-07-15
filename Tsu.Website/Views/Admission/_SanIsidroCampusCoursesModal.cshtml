@@ -1,0 +1,11 @@
+﻿@model Tsu.Website.Models.CampusModel
+
+<div id="SanIsidroCampusCoursesModal" class="modal hide fade">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">x</button>
+		<h3> @Model.Name </h3>
+	</div>
+	<div class="modal-body">
+		@Html.Partial("_CoursesOffered", Model.Colleges)
+	</div>
+</div>
