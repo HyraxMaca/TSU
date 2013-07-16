@@ -57,13 +57,8 @@
 	var sanIsidroCampus = Model.FirstOrDefault(campus => campus.Name == "San Isidro Campus");
 }
 
-<!-- Main Campus -->
 @Html.Partial("_MainCampusCoursesModal", mainCampus)
-
-<!-- Lucinda Campus -->
 @Html.Partial("_LucindaCampusCoursesModal", lucindaCampus)
-
-<!-- San Isidro Campus -->
 @Html.Partial("_SanIsidroCampusCoursesModal", sanIsidroCampus)
 
 

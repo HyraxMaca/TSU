@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Tsu.Website.Controllers
 {
-	public class HomeController : Controller
+	public class HomeController : ControllerBase
 	{
 		public ActionResult Index()
 		{

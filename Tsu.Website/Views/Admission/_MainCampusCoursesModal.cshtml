@@ -1,9 +1,9 @@
 ﻿@model Tsu.Website.Models.CampusModel
 
-<div id="MainCampusCoursesModal" class="modal hide fade">
+<div id="MainCampusCoursesModal" class="modal hide fade popup-courses">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal">x</button>
-		<h3> @Model.Name </h3>
+		<h2> @Model.Name </h2>
 	</div>
 	<div class="modal-body">
 		@Html.Partial("_CoursesOffered", Model.Colleges)

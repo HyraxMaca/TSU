@@ -12,5 +12,7 @@ namespace Tsu.Domain.Concrete
 	{
 		public DbSet<Campus> Campuses { get; set; }
 		public DbSet<College> Colleges { get; set; }
+		public DbSet<Course> Courses { get; set; }
+		public DbSet<MajorDiscipline> MajorDisciplines { get; set; }
 	}
 }

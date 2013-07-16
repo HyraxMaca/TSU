@@ -47,6 +47,15 @@
     <Compile Include="Concrete\TsuContext.cs" />
     <Compile Include="Entities\Campus.cs" />
     <Compile Include="Entities\College.cs" />
+    <Compile Include="Entities\Course.cs" />
+    <Compile Include="Entities\MajorDiscipline.cs" />
+    <Compile Include="Entities\Mappings\CampusMapping.cs" />
+    <Compile Include="Entities\Mappings\CollegeMapping.cs" />
+    <Compile Include="Entities\Mappings\CourseMapping.cs" />
+    <Compile Include="Entities\Mappings\MajorDisciplineMapping.cs" />
+    <Compile Include="Entities\Mappings\ResearchMapping.cs" />
+    <Compile Include="Entities\Research.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

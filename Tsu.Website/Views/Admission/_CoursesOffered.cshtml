@@ -1,15 +1,16 @@
 ﻿@model IEnumerable<Tsu.Website.Models.CollegeModel>
 
-<table class="table table-striped course-table">
+
+<table class="table table-striped">
 	<tr>
-		<td><strong> COURSE CODE </strong></td>
+		<td style="min-width:130px;"><strong> COURSE CODE </strong></td>
 	</tr>
 	@foreach (var college in Model)
 	{
 		<tr class="">
 			<td></td>
-			<td>
-				<h5> @college.Name.ToUpper() </h5>
+			<td class="college-name">
+				 @college.Name.ToUpper()
 			</td>
 		</tr>
 		
@@ -26,14 +27,14 @@
 							<span class="badge badge-inverse"> @course.Code[2] </span>
 							<span class="badge badge-inverse"> @course.Code[3] </span>
 						</td>
-						<td> @course.Name </td>
+						<td class="course-name"> @course.Name </td>
 					</tr>
 				}
 				else
 				{
 					<tr>
 						<td> </td>
-						<td> @course.Name </td>
+						<td class="course-name"> @course.Name </td>
 					</tr>
 	 
 					foreach (var major in course.MajorDisciplines)
@@ -45,7 +46,7 @@
 							<span class="badge badge-inverse"> @major.Code[2] </span>
 							<span class="badge badge-inverse"> @major.Code[3] </span>
 						</td>
-						<td> major in @major.Name </td>
+						<td class="major-name"> major in @major.Name </td>
 					</tr>
 					}
 				}

@@ -7,7 +7,7 @@ using Tsu.Website.Models;
 
 namespace Tsu.Website.Controllers
 {
-    public class AdmissionController : Controller
+    public class AdmissionController : ControllerBase
     {
         //
         // GET: /Admission/
@@ -28,8 +28,7 @@ namespace Tsu.Website.Controllers
 			var lucindaCampus = new CampusModel("Lucinda Campus");
 			var sanIsidroCampus = new CampusModel("San Isidro Campus");
 
-			/*  Colleges
-			 --------------------------------------------------------------------*/
+			#region Colleges Stub
 
 			// Main Campus
 			var cass = new CollegeModel("College of Arts and Social Science", mainCampus);
@@ -48,6 +47,7 @@ namespace Tsu.Website.Controllers
 			var ct = new CollegeModel("College of Technology", sanIsidroCampus);
 			var cafa = new CollegeModel("College of Architecture and Fine Arts", sanIsidroCampus);
 
+			#endregion
 
 			/*  Courses Stubs
 			 --------------------------------------------------------------------*/
@@ -173,12 +173,11 @@ namespace Tsu.Website.Controllers
 
 			#endregion
 
-
-
 			List<CampusModel> campuses = new List<CampusModel>();
 			campuses.Add(mainCampus);
 			campuses.Add(lucindaCampus);
 			campuses.Add(sanIsidroCampus);
+
 
 
 			return campuses;

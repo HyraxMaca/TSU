@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace Tsu.Domain.Entities
 {
-	public class College
+	public class MajorDiscipline
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
 		public string Code { get; set; }
+		public string AdmissionCode { get; set; }
 
-		public int CampusId { get; set; }
-		public Campus Campus { get; set; }
-
-		public ICollection<Course> Courses { get; set; }
-		public ICollection<Research> Researches { get; set; }
+		public int CourseId { get; set; }
+		public Course Course { get; set; }
 	}
 }

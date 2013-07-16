@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.Website", "Tsu.Website\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.Domain", "Tsu.Domain\Tsu.Domain.csproj", "{C3DD3CBA-6F23-4910-BECE-232B53181069}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.WebsiteUnitTests", "Tsu.WebsiteUnitTests\Tsu.WebsiteUnitTests.csproj", "{C432E302-7875-41AE-B665-33505049CD10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{C3DD3CBA-6F23-4910-BECE-232B53181069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3DD3CBA-6F23-4910-BECE-232B53181069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3DD3CBA-6F23-4910-BECE-232B53181069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C432E302-7875-41AE-B665-33505049CD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C432E302-7875-41AE-B665-33505049CD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C432E302-7875-41AE-B665-33505049CD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C432E302-7875-41AE-B665-33505049CD10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
