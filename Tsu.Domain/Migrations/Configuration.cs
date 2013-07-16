@@ -7,16 +7,16 @@ namespace Tsu.Domain.Migrations
 	using System.Linq;
 	using Tsu.Domain.Entities;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Tsu.Domain.Concrete.TsuContext>
-    {
-        public Configuration()
-        {
-            AutomaticMigrationsEnabled = true;
+	internal sealed class Configuration : DbMigrationsConfiguration<Tsu.Domain.Concrete.TsuContext>
+	{
+		public Configuration()
+		{
+			AutomaticMigrationsEnabled = true;
 			AutomaticMigrationDataLossAllowed = true;
-        }
+		}
 
-        protected override void Seed(Tsu.Domain.Concrete.TsuContext context)
-        {
+		protected override void Seed(Tsu.Domain.Concrete.TsuContext context)
+		{
 			// Campuses
 			var mainCampus = new Campus { Id = 1, Name = "Main Campus", Code = "MC" };
 			var lucindaCampus = new Campus { Id = 2, Name = "Lucinda Campus", Code = "LC" };
@@ -58,7 +58,7 @@ namespace Tsu.Domain.Migrations
 			context.Colleges.Add(coed);
 
 			context.Colleges.Add(ct);
-			sanIsidroCampus.Colleges.Add(cafa);
+			context.Colleges.Add(cafa);
 
 
 			#endregion
@@ -156,9 +156,9 @@ namespace Tsu.Domain.Migrations
 			var be = new MajorDiscipline { Name = "Business Economics", AdmissionCode = "1206", CourseId = bsba.Id };
 			var mm = new MajorDiscipline { Name = "Marketing Management", AdmissionCode = "1207", CourseId = bsba.Id };
 
-			bsba.Majors.Add(fma);
-			bsba.Majors.Add(be);
-			bsba.Majors.Add(mm);
+			context.MajorDisciplines.Add(fma);
+			context.MajorDisciplines.Add(be);
+			context.MajorDisciplines.Add(mm);
 
 			// CoE
 			var coengCE = new Course { Id = 11, Name = "Bachelor of Science in Civil Engineering", AdmissionCode = "1401", CollegeId = coeng.Id };
@@ -235,12 +235,12 @@ namespace Tsu.Domain.Migrations
 			var SocSci = new MajorDiscipline { Name = "Social Studies", AdmissionCode = "2109", CourseId = coed.Id };
 
 			// Add Secondary Educ Majors
-			secondaryEduc.Majors.Add(english);
-			secondaryEduc.Majors.Add(filipino);
-			secondaryEduc.Majors.Add(mathematics);
-			secondaryEduc.Majors.Add(mape);
-			secondaryEduc.Majors.Add(ps);
-			secondaryEduc.Majors.Add(SocSci);
+			context.MajorDisciplines.Add(english);
+			context.MajorDisciplines.Add(filipino);
+			context.MajorDisciplines.Add(mathematics);
+			context.MajorDisciplines.Add(mape);
+			context.MajorDisciplines.Add(ps);
+			context.MajorDisciplines.Add(SocSci);
 
 			// Insert Courses
 			// CON
@@ -265,17 +265,17 @@ namespace Tsu.Domain.Migrations
 			var bitAuto = new MajorDiscipline { Name = "Automotive Technology", AdmissionCode = "3202", CourseId = ctBIT.Id };
 			var bitET = new MajorDiscipline { Name = "Electrical Technology", AdmissionCode = "3203", CourseId = ctBIT.Id };
 
-			ctBIT.Majors.Add(bitAuto);
-			ctBIT.Majors.Add(bitET);
+			context.MajorDisciplines.Add(bitAuto);
+			context.MajorDisciplines.Add(bitET);
 
 			// BSIT
 			var ctBSIT = new Course { Id = 32, Name = "Bachelor of Science in Industrial Technology", AdmissionCode = null, CollegeId = ct.Id };
 			//BSIT Major
 			var bsitMT = new MajorDiscipline { Name = "Mechatronics Technology", AdmissionCode = "3204", CourseId = ctBSIT.Id };
-			var bsitEIT = new MajorDiscipline { Name = "Electronics and Information Technology", AdmissionCode =  "3205", CourseId = ctBSIT.Id };
+			var bsitEIT = new MajorDiscipline { Name = "Electronics and Information Technology", AdmissionCode = "3205", CourseId = ctBSIT.Id };
 
-			ctBSIT.Majors.Add(bsitMT);
-			ctBSIT.Majors.Add(bsitEIT);
+			context.MajorDisciplines.Add(bsitMT);
+			context.MajorDisciplines.Add(bsitEIT);
 
 			// Insert Courses
 			// CAFA
@@ -293,6 +293,6 @@ namespace Tsu.Domain.Migrations
 
 
 
-        }
-    }
+		}
+	}
 }
