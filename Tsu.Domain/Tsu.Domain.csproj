@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{249BECED-DD1D-4337-AEBE-03D0655B4155}</ProjectGuid>
+    <ProjectGuid>{8BA18C43-0BF2-4635-B2E2-E453C0862BEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tsu.Domain</RootNamespace>
@@ -40,16 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tsu.DataAccess\Tsu.DataAccess.csproj">
-      <Project>{c3dd3cba-6f23-4910-bece-232b53181069}</Project>
-      <Name>Tsu.DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tsu.Website\Tsu.Website.csproj">
-      <Project>{d8aa3815-dce5-46bf-907e-abd62b12321d}</Project>
-      <Name>Tsu.Website</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
