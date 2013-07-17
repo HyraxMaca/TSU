@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Ninject;
+using Tsu.Domain.Concrete;
 
 namespace Tsu.Website.Infrastructure
 {
@@ -27,6 +28,7 @@ namespace Tsu.Website.Infrastructure
 		protected void AddBindings()
 		{
 			// Context
+			_kernel.Bind<DbContext>().To<TsuContext>();
 		}
 	}
 }

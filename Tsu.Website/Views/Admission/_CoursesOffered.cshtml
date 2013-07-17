@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Tsu.Website.Models.CollegeModel>
+﻿@model IEnumerable<Tsu.Domain.Entities.College>
 
 
 <table class="table table-striped">
@@ -18,14 +18,14 @@
 		{
 			foreach (var course in college.Courses)
 			{
-				if (!String.IsNullOrEmpty(course.Code))
+				if (!String.IsNullOrEmpty(course.AdmissionCode))
 				{
 					<tr>
 						<td>
-							<span class="badge badge-inverse"> @course.Code[0] </span>
-							<span class="badge badge-inverse"> @course.Code[1] </span>
-							<span class="badge badge-inverse"> @course.Code[2] </span>
-							<span class="badge badge-inverse"> @course.Code[3] </span>
+							<span class="badge badge-inverse"> @course.AdmissionCode[0] </span>
+							<span class="badge badge-inverse"> @course.AdmissionCode[1] </span>
+							<span class="badge badge-inverse"> @course.AdmissionCode[2] </span>
+							<span class="badge badge-inverse"> @course.AdmissionCode[3] </span>
 						</td>
 						<td class="course-name"> @course.Name </td>
 					</tr>
@@ -37,14 +37,14 @@
 						<td class="course-name"> @course.Name </td>
 					</tr>
 	 
-					foreach (var major in course.MajorDisciplines)
+					foreach (var major in course.Majors)
 					{
 						<tr>
 						<td>
-							<span class="badge badge-inverse"> @major.Code[0] </span>
-							<span class="badge badge-inverse"> @major.Code[1] </span>
-							<span class="badge badge-inverse"> @major.Code[2] </span>
-							<span class="badge badge-inverse"> @major.Code[3] </span>
+							<span class="badge badge-inverse"> @major.AdmissionCode[0] </span>
+							<span class="badge badge-inverse"> @major.AdmissionCode[1] </span>
+							<span class="badge badge-inverse"> @major.AdmissionCode[2] </span>
+							<span class="badge badge-inverse"> @major.AdmissionCode[3] </span>
 						</td>
 						<td class="major-name"> major in @major.Name </td>
 					</tr>

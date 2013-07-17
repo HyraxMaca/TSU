@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Tsu.Website.Infrastructure;
 
 namespace Tsu.Website
 {
@@ -23,6 +24,8 @@ namespace Tsu.Website
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 			AuthConfig.RegisterAuth();
+
+			ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
 		}
 	}
 }

@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Tsu.Domain.Concrete;
 
 namespace Tsu.Website.Controllers
 {
 	public class HomeController : ControllerBase
 	{
+		private TsuContext _tsu = new TsuContext();
+
 		public ActionResult Index()
 		{
 			return View();

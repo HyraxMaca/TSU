@@ -17,14 +17,15 @@ namespace Tsu.Domain.Migrations
 
 		protected override void Seed(Tsu.Domain.Concrete.TsuContext context)
 		{
+			
 			// Campuses
 			var mainCampus = new Campus { Id = 1, Name = "Main Campus", Code = "MC" };
 			var lucindaCampus = new Campus { Id = 2, Name = "Lucinda Campus", Code = "LC" };
 			var sanIsidroCampus = new Campus { Id = 3, Name = "San Isidro Campus", Code = "SIC" };
 
-			context.Campuses.Add(mainCampus);
-			context.Campuses.Add(lucindaCampus);
-			context.Campuses.Add(sanIsidroCampus);
+			context.Campuses.AddOrUpdate(mainCampus);
+			context.Campuses.AddOrUpdate(lucindaCampus);
+			context.Campuses.AddOrUpdate(sanIsidroCampus);
 
 			#region Colleges Stub
 			// Main Campus
@@ -46,19 +47,19 @@ namespace Tsu.Domain.Migrations
 
 
 			// Insert Colleges
-			context.Colleges.Add(cass);
-			context.Colleges.Add(chk);
-			context.Colleges.Add(cba);
-			context.Colleges.Add(ccs);
-			context.Colleges.Add(cpa);
-			context.Colleges.Add(coeng);
-			context.Colleges.Add(cos);
+			context.Colleges.AddOrUpdate(cass);
+			context.Colleges.AddOrUpdate(chk);
+			context.Colleges.AddOrUpdate(cba);
+			context.Colleges.AddOrUpdate(ccs);
+			context.Colleges.AddOrUpdate(cpa);
+			context.Colleges.AddOrUpdate(coeng);
+			context.Colleges.AddOrUpdate(cos);
 
-			context.Colleges.Add(con);
-			context.Colleges.Add(coed);
+			context.Colleges.AddOrUpdate(con);
+			context.Colleges.AddOrUpdate(coed);
 
-			context.Colleges.Add(ct);
-			context.Colleges.Add(cafa);
+			context.Colleges.AddOrUpdate(ct);
+			context.Colleges.AddOrUpdate(cafa);
 
 
 			#endregion
@@ -156,9 +157,9 @@ namespace Tsu.Domain.Migrations
 			var be = new MajorDiscipline { Name = "Business Economics", AdmissionCode = "1206", CourseId = bsba.Id };
 			var mm = new MajorDiscipline { Name = "Marketing Management", AdmissionCode = "1207", CourseId = bsba.Id };
 
-			context.MajorDisciplines.Add(fma);
-			context.MajorDisciplines.Add(be);
-			context.MajorDisciplines.Add(mm);
+			context.MajorDisciplines.AddOrUpdate(fma);
+			context.MajorDisciplines.AddOrUpdate(be);
+			context.MajorDisciplines.AddOrUpdate(mm);
 
 			// CoE
 			var coengCE = new Course { Id = 11, Name = "Bachelor of Science in Civil Engineering", AdmissionCode = "1401", CollegeId = coeng.Id };
@@ -183,33 +184,33 @@ namespace Tsu.Domain.Migrations
 			// Insert Courses
 
 			// CASS
-			context.Courses.Add(abComArts);
-			context.Courses.Add(abEng);
-			context.Courses.Add(abPsych);
-			context.Courses.Add(bsCrim);
+			context.Courses.AddOrUpdate(abComArts);
+			context.Courses.AddOrUpdate(abEng);
+			context.Courses.AddOrUpdate(abPsych);
+			context.Courses.AddOrUpdate(bsCrim);
 			//CHK
-			context.Courses.Add(bpe);
+			context.Courses.AddOrUpdate(bpe);
 			// CBA
-			context.Courses.Add(bsa);
-			context.Courses.Add(bsAct);
-			context.Courses.Add(bsba);
-			context.Courses.Add(bsHrm);
-			context.Courses.Add(bsEntrep);
+			context.Courses.AddOrUpdate(bsa);
+			context.Courses.AddOrUpdate(bsAct);
+			context.Courses.AddOrUpdate(bsba);
+			context.Courses.AddOrUpdate(bsHrm);
+			context.Courses.AddOrUpdate(bsEntrep);
 			// CoE
-			context.Courses.Add(coengCE);
-			context.Courses.Add(coengIE);
-			context.Courses.Add(coengME);
-			context.Courses.Add(coengElec);
-			context.Courses.Add(coengEE);
+			context.Courses.AddOrUpdate(coengCE);
+			context.Courses.AddOrUpdate(coengIE);
+			context.Courses.AddOrUpdate(coengME);
+			context.Courses.AddOrUpdate(coengElec);
+			context.Courses.AddOrUpdate(coengEE);
 			// CCS
-			context.Courses.Add(bsis);
-			context.Courses.Add(bsit);
-			context.Courses.Add(bscs);
+			context.Courses.AddOrUpdate(bsis);
+			context.Courses.AddOrUpdate(bsit);
+			context.Courses.AddOrUpdate(bscs);
 			// CPA
-			context.Courses.Add(bpa);
+			context.Courses.AddOrUpdate(bpa);
 			// COS
-			context.Courses.Add(bsChem);
-			context.Courses.Add(bsMath);
+			context.Courses.AddOrUpdate(bsChem);
+			context.Courses.AddOrUpdate(bsMath);
 
 
 
@@ -234,22 +235,22 @@ namespace Tsu.Domain.Migrations
 			var ps = new MajorDiscipline { Name = "Physical Science", AdmissionCode = "2108", CourseId = coed.Id };
 			var SocSci = new MajorDiscipline { Name = "Social Studies", AdmissionCode = "2109", CourseId = coed.Id };
 
-			// Add Secondary Educ Majors
-			context.MajorDisciplines.Add(english);
-			context.MajorDisciplines.Add(filipino);
-			context.MajorDisciplines.Add(mathematics);
-			context.MajorDisciplines.Add(mape);
-			context.MajorDisciplines.Add(ps);
-			context.MajorDisciplines.Add(SocSci);
+			//.AddOrUpdate Secondary Educ Majors
+			context.MajorDisciplines.AddOrUpdate(english);
+			context.MajorDisciplines.AddOrUpdate(filipino);
+			context.MajorDisciplines.AddOrUpdate(mathematics);
+			context.MajorDisciplines.AddOrUpdate(mape);
+			context.MajorDisciplines.AddOrUpdate(ps);
+			context.MajorDisciplines.AddOrUpdate(SocSci);
 
 			// Insert Courses
 			// CON
-			context.Courses.Add(nursing);
+			context.Courses.AddOrUpdate(nursing);
 			// CoED
-			context.Courses.Add(eeGen);
-			context.Courses.Add(eePre);
-			context.Courses.Add(ie);
-			context.Courses.Add(secondaryEduc);
+			context.Courses.AddOrUpdate(eeGen);
+			context.Courses.AddOrUpdate(eePre);
+			context.Courses.AddOrUpdate(ie);
+			context.Courses.AddOrUpdate(secondaryEduc);
 
 			#endregion
 
@@ -265,8 +266,8 @@ namespace Tsu.Domain.Migrations
 			var bitAuto = new MajorDiscipline { Name = "Automotive Technology", AdmissionCode = "3202", CourseId = ctBIT.Id };
 			var bitET = new MajorDiscipline { Name = "Electrical Technology", AdmissionCode = "3203", CourseId = ctBIT.Id };
 
-			context.MajorDisciplines.Add(bitAuto);
-			context.MajorDisciplines.Add(bitET);
+			context.MajorDisciplines.AddOrUpdate(bitAuto);
+			context.MajorDisciplines.AddOrUpdate(bitET);
 
 			// BSIT
 			var ctBSIT = new Course { Id = 32, Name = "Bachelor of Science in Industrial Technology", AdmissionCode = null, CollegeId = ct.Id };
@@ -274,17 +275,17 @@ namespace Tsu.Domain.Migrations
 			var bsitMT = new MajorDiscipline { Name = "Mechatronics Technology", AdmissionCode = "3204", CourseId = ctBSIT.Id };
 			var bsitEIT = new MajorDiscipline { Name = "Electronics and Information Technology", AdmissionCode = "3205", CourseId = ctBSIT.Id };
 
-			context.MajorDisciplines.Add(bsitMT);
-			context.MajorDisciplines.Add(bsitEIT);
+			context.MajorDisciplines.AddOrUpdate(bsitMT);
+			context.MajorDisciplines.AddOrUpdate(bsitEIT);
 
 			// Insert Courses
 			// CAFA
-			context.Courses.Add(cafaFA);
-			context.Courses.Add(cafaArchi);
+			context.Courses.AddOrUpdate(cafaFA);
+			context.Courses.AddOrUpdate(cafaArchi);
 			// CT
-			context.Courses.Add(ctFT);
-			context.Courses.Add(ctBIT);
-			context.Courses.Add(ctBSIT);
+			context.Courses.AddOrUpdate(ctFT);
+			context.Courses.AddOrUpdate(ctBIT);
+			context.Courses.AddOrUpdate(ctBSIT);
 
 			#endregion
 
