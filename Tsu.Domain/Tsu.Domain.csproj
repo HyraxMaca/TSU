@@ -7,8 +7,8 @@
     <ProjectGuid>{C3DD3CBA-6F23-4910-BECE-232B53181069}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tsu.Domain</RootNamespace>
-    <AssemblyName>Tsu.Domain</AssemblyName>
+    <RootNamespace>Tsu.DataAccess</RootNamespace>
+    <AssemblyName>Tsu.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,8 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICampusRepository.cs" />
+    <Compile Include="Abstract\ICollegeRepository.cs" />
+    <Compile Include="Abstract\ICourseRepository.cs" />
+    <Compile Include="Abstract\IMajorDisciplineRepository.cs" />
     <Compile Include="Abstract\IRepository.cs" />
-    <Compile Include="Concrete\TsuRepositoryBase.cs" />
+    <Compile Include="Abstract\IResearchRepository.cs" />
+    <Compile Include="Concrete\CampusRepository.cs" />
+    <Compile Include="Concrete\CollegeRepository.cs" />
+    <Compile Include="Concrete\CourseRepository.cs" />
+    <Compile Include="Concrete\MajorDisciplineRepository.cs" />
+    <Compile Include="Concrete\ResearchRepository.cs" />
+    <Compile Include="Concrete\EfRepositoryBase.cs" />
     <Compile Include="Concrete\TsuContext.cs" />
     <Compile Include="Entities\Campus.cs" />
     <Compile Include="Entities\College.cs" />

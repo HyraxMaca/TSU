@@ -8,14 +8,15 @@ using Tsu.Domain.Abstract;
 
 namespace Tsu.Domain.Concrete
 {
-	public abstract class TsuRepositoryBase<TEntity, TKey> 
+	public abstract class EfRepositoryBase<TContext, TEntity, TKey> 
 		: IRepository<TEntity, TKey>
-		where TEntity : class
+			where TEntity : class
+			where TContext : DbContext
 	{
-		protected TsuContext _context;
+		protected TContext _context;
 		protected DbSet<TEntity> _dbSet;
 
-		public TsuRepositoryBase(TsuContext context)
+		public EfRepositoryBase(TContext context)
 		{
 			_context = context;
 			_dbSet = _context.Set<TEntity>();
@@ -61,5 +62,9 @@ namespace Tsu.Domain.Concrete
 			entityEntry.Property(property).IsModified = true;
 		}
 
+		public IQueryable<TEntity> Query(System.Linq.Expressions.Expression<Func<TEntity, bool>> filter)
+		{
+			return _dbSet.Where(filter);
+		}
 	}
 }

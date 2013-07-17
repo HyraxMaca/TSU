@@ -12,6 +12,7 @@ namespace Tsu.Domain.Abstract
 	{
 		TEntity GetById(TKey key);
 		IEnumerable<TEntity> GetAll();
+		IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> filter);
 		void Create(TEntity entity);
 		void Update(TEntity entity);
 		void Update(TEntity entity, Expression<Func<TEntity, object>> property);
