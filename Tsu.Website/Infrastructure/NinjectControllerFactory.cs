@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Ninject;
-using Tsu.Domain.Concrete;
+using Tsu.DataAccess.Concrete;
 
 namespace Tsu.Website.Infrastructure
 {

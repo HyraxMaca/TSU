@@ -60,8 +60,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tsu.Domain\Tsu.Domain.csproj">
+    <ProjectReference Include="..\Tsu.DataAccess\Tsu.DataAccess.csproj">
       <Project>{c3dd3cba-6f23-4910-bece-232b53181069}</Project>
+      <Name>Tsu.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsu.Domain\Tsu.Domain.csproj">
+      <Project>{7b18270a-f3e0-4c65-977d-44770e1b33d0}</Project>
       <Name>Tsu.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tsu.Website\Tsu.Website.csproj">
