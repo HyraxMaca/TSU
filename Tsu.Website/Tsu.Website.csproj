@@ -373,9 +373,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tsu.Domain\Tsu.Domain.csproj">
+    <ProjectReference Include="..\Tsu.DataAccess\Tsu.DataAccess.csproj">
       <Project>{c3dd3cba-6f23-4910-bece-232b53181069}</Project>
-      <Name>Tsu.Domain</Name>
+      <Name>Tsu.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

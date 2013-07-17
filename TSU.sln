@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.Website", "Tsu.Website\Tsu.Website.csproj", "{D8AA3815-DCE5-46BF-907E-ABD62B12321D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.Domain", "Tsu.Domain\Tsu.Domain.csproj", "{C3DD3CBA-6F23-4910-BECE-232B53181069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.DataAccess", "Tsu.DataAccess\Tsu.DataAccess.csproj", "{C3DD3CBA-6F23-4910-BECE-232B53181069}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.WebsiteUnitTests", "Tsu.WebsiteUnitTests\Tsu.WebsiteUnitTests.csproj", "{C432E302-7875-41AE-B665-33505049CD10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsu.Domain", "Tsu.Domain\Tsu.Domain.csproj", "{249BECED-DD1D-4337-AEBE-03D0655B4155}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{C432E302-7875-41AE-B665-33505049CD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C432E302-7875-41AE-B665-33505049CD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C432E302-7875-41AE-B665-33505049CD10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249BECED-DD1D-4337-AEBE-03D0655B4155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249BECED-DD1D-4337-AEBE-03D0655B4155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249BECED-DD1D-4337-AEBE-03D0655B4155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249BECED-DD1D-4337-AEBE-03D0655B4155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,8 +4,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Tsu.Domain.Concrete;
-using Tsu.Domain.Entities;
+using Tsu.DataAccess.Concrete;
+using Tsu.DataAccess.Entities;
 
 namespace Tsu.Website.Controllers
 {
