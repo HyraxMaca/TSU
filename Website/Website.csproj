@@ -378,11 +378,11 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tsu.DataAccess\Tsu.DataAccess.csproj">
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{c3dd3cba-6f23-4910-bece-232b53181069}</Project>
       <Name>Tsu.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tsu.Domain\Tsu.Domain.csproj">
+    <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{8ba18c43-0bf2-4635-b2e2-e453c0862beb}</Project>
       <Name>Tsu.Domain</Name>
     </ProjectReference>

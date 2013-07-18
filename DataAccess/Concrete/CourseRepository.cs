@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tsu.DataAccess.Abstract;
+using Tsu.DataAccess.Interfaces;
 using Tsu.DataAccess.Entities;
 
 namespace Tsu.DataAccess.Concrete
 {
-	public class CampusRepository : 
-					EfRepositoryBase<TsuContext, Campus, int>, 
-					ICampusRepository
+	public class CourseRepository : EfRepositoryBase<TsuContext, Course, int>, ICourseRepository
 	{
-		public CampusRepository(TsuContext context)
+		public CourseRepository(TsuContext context)
 			: base(context)
 		{
 

@@ -60,11 +60,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tsu.DataAccess\Tsu.DataAccess.csproj">
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{c3dd3cba-6f23-4910-bece-232b53181069}</Project>
       <Name>Tsu.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tsu.Website\Tsu.Website.csproj">
+    <ProjectReference Include="..\Website\Website.csproj">
       <Project>{d8aa3815-dce5-46bf-907e-abd62b12321d}</Project>
       <Name>Tsu.Website</Name>
     </ProjectReference>

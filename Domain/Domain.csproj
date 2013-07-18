@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3DD3CBA-6F23-4910-BECE-232B53181069}</ProjectGuid>
+    <ProjectGuid>{8BA18C43-0BF2-4635-B2E2-E453C0862BEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tsu.DataAccess</RootNamespace>
-    <AssemblyName>Tsu.DataAccess</AssemblyName>
+    <RootNamespace>Tsu.Domain</RootNamespace>
+    <AssemblyName>Tsu.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,13 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,38 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\ICampusRepository.cs" />
-    <Compile Include="Abstract\ICollegeRepository.cs" />
-    <Compile Include="Abstract\ICourseRepository.cs" />
-    <Compile Include="Abstract\IMajorDisciplineRepository.cs" />
-    <Compile Include="Abstract\IRepository.cs" />
-    <Compile Include="Abstract\IResearchRepository.cs" />
-    <Compile Include="Abstract\IUnitOfWork.cs" />
-    <Compile Include="Concrete\CampusRepository.cs" />
-    <Compile Include="Concrete\CollegeRepository.cs" />
-    <Compile Include="Concrete\CourseRepository.cs" />
-    <Compile Include="Concrete\MajorDisciplineRepository.cs" />
-    <Compile Include="Concrete\ResearchRepository.cs" />
-    <Compile Include="Concrete\EfRepositoryBase.cs" />
-    <Compile Include="Concrete\TsuContext.cs" />
-    <Compile Include="Concrete\UnitOfWork.cs" />
-    <Compile Include="Entities\Campus.cs" />
-    <Compile Include="Entities\College.cs" />
-    <Compile Include="Entities\Course.cs" />
-    <Compile Include="Entities\MajorDiscipline.cs" />
-    <Compile Include="Entities\Mappings\CampusMapping.cs" />
-    <Compile Include="Entities\Mappings\CollegeMapping.cs" />
-    <Compile Include="Entities\Mappings\CourseMapping.cs" />
-    <Compile Include="Entities\Mappings\MajorDisciplineMapping.cs" />
-    <Compile Include="Entities\Mappings\ResearchMapping.cs" />
-    <Compile Include="Entities\Research.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

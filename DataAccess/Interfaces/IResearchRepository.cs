@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Tsu.DataAccess.Entities;
 
-namespace Tsu.DataAccess.Abstract
+namespace Tsu.DataAccess.Interfaces
 {
-	public interface ICampusRepository : IRepository<Campus, int>
+	public interface IResearchRepository : IRepository<Research, int>
 	{
 
 	}
