@@ -9,10 +9,11 @@
 	@Styles.Render("~/Content/bootstrap")
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
+	@RenderSection("pageStyles", required:false)
 </head>
 <body>
 	<header>
-		<div class="navbar navbar-fixed-top">
+		<div class="navbar navbar-fixed-top active-link-toggle">
 			<div class="navbar-inner">
 				<div id="nav-container" class="container">
 					<a id="tsu-logo" class="brand" href="@Url.Action("Index", "Home")">

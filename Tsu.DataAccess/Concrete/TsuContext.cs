@@ -12,7 +12,7 @@ namespace Tsu.DataAccess.Concrete
 	public class TsuContext : DbContext
 	{
 		public TsuContext()
-			:base(@"Data Source=(local);
+			:base(@"Data Source=.\sqlexpress;
 							Initial Catalog=TsuSolutions;
 							Integrated Security=true;")
 		{
@@ -23,6 +23,8 @@ namespace Tsu.DataAccess.Concrete
 		public DbSet<College> Colleges { get; set; }
 		public DbSet<Course> Courses { get; set; }
 		public DbSet<MajorDiscipline> MajorDisciplines { get; set; }
+		public DbSet<Research> Researches { get; set; }
+
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{

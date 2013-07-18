@@ -156,7 +156,7 @@ hr
 -----------------------------------------------------------------------*/
 footer
 {
-	background-color:#000;
+	background:url(images/patterns/tweed.png) repeat;
 	padding:30px;
 	color:#ccc;
 	border-top:5px solid #ffc40d;

@@ -186,9 +186,13 @@
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap-tsu.css" />
     <Content Include="Content\bootstrap-tsu.min.css" />
+    <Content Include="Content\College.css" />
     <Content Include="Content\Core.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\patterns\cream_pixels.png" />
+    <Content Include="Content\images\patterns\maroon-stripe.gif" />
+    <Content Include="Content\images\patterns\tweed.png" />
     <Content Include="Content\jqueryui-override.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
@@ -363,6 +367,7 @@
     <Content Include="Views\Admission\_MainCampusCoursesModal.cshtml" />
     <Content Include="Views\Admission\_SanIsidroCampusCoursesModal.cshtml" />
     <Content Include="Views\Admission\_LucindaCampusCoursesModal.cshtml" />
+    <Content Include="Views\Colleges\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -376,6 +381,10 @@
     <ProjectReference Include="..\Tsu.DataAccess\Tsu.DataAccess.csproj">
       <Project>{c3dd3cba-6f23-4910-bece-232b53181069}</Project>
       <Name>Tsu.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsu.Domain\Tsu.Domain.csproj">
+      <Project>{8ba18c43-0bf2-4635-b2e2-e453c0862beb}</Project>
+      <Name>Tsu.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

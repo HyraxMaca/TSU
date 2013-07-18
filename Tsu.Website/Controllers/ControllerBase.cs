@@ -8,5 +8,6 @@ namespace Tsu.Website.Controllers
 {
 	public class ControllerBase : Controller
 	{
+
 	}
 }
