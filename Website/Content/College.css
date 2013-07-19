@@ -3,9 +3,9 @@
 }
 
 
-.content
+.hero-unit
 {
-	
+background:url(images/patterns/white_wall_hash.png) repeat;	
 }
 
 
@@ -32,4 +32,10 @@
 .sidebar h6
 {
 	margin-bottom:0px;
+}
+
+
+.news
+{
+	
 }
