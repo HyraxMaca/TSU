@@ -8,6 +8,7 @@
 	ViewBag.Title = "Admission";
 }
 
+
 @section featured
 {
 	<div class="content">
@@ -26,11 +27,27 @@
 						<li><a href="#policies-requirements" data-toggle="tab"> Policies/Requirements </a></li>
 					</ul>
 				</div>
-				<ul class="nav nav-list">
+				<ul class="nav nav-tabs nav-stacked">
 					<li class="nav-header">Courses Offered </li>
-					<li><a href="#MainCampusCoursesModal" data-toggle="modal" data-target="#MainCampusCoursesModal"> Main </a></li>
-					<li><a href="#LucindaCampusCoursesModal" data-toggle="modal" data-target="#LucindaCampusCoursesModal"> Lucinda </a></li>
-					<li><a href="#SanIsidroCampusCoursesModal" data-toggle="modal" data-target="#SanIsidroCampusCoursesModal"> San Isidro </a></li>
+					<li>
+						<a href="#MainCampusCoursesModal" data-toggle="modal" data-target="#MainCampusCoursesModal"> 
+							Main 
+							<i class="pull-right icon-chevron-right"></i>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#LucindaCampusCoursesModal" data-toggle="modal" data-target="#LucindaCampusCoursesModal">
+							 Lucinda 
+							<i class="pull-right icon-chevron-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#SanIsidroCampusCoursesModal" data-toggle="modal" data-target="#SanIsidroCampusCoursesModal"> 
+							San Isidro 
+							<i class="pull-right icon-chevron-right"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 
@@ -60,6 +77,11 @@
 @Html.Partial("_LucindaCampusCoursesModal", lucindaCampus)
 @Html.Partial("_SanIsidroCampusCoursesModal", sanIsidroCampus)
 
+
+@section pageStyle
+{
+	@Styles.Render("~/Content/Admission.css")
+}
 
 
 

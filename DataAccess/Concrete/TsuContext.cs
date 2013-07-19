@@ -12,9 +12,7 @@ namespace Tsu.DataAccess.Concrete
 	public class TsuContext : DbContext
 	{
 		public TsuContext()
-			:base(@"Data Source=.\sqlexpress;
-							Initial Catalog=TsuSolutions;
-							Integrated Security=true;")
+			:base()
 		{
 
 		}

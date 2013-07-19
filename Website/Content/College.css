@@ -5,5 +5,31 @@
 
 .content
 {
-	background:url(images/patterns/maroon-stripe.gif) repeat;
+	
+}
+
+
+.logo
+{
+	float:right;
+}
+
+.sidebar
+{
+	line-height:20px;
+}
+
+	.sidebar ul
+	{
+		font-size:14px;
+	}
+
+.sidebar h1,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6
+{
+	margin-bottom:0px;
 }
