@@ -60,9 +60,9 @@ small
 	box-shadow:none;
 }
 
-.navbar, .navbar-inner
+.navbar
 {
-	border-bottom:10px solid #ffc40d;
+	border-bottom:3px solid #ffc40d;
 	color:#eee;
 	font-size:12px;
 }

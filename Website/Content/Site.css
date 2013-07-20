@@ -62,7 +62,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd6d6d6,endCol
 
 body
 {
-	background:url("images/patterns/white_wall_hash.png") repeat;
+	/*background:url("images/patterns/white_wall_hash.png") repeat;*/
+	background:#fff;
 	height:100%;
 	font-size:12px;
 	color:#111;
@@ -97,9 +98,18 @@ hr
 
 }
 
+#tsu-text
+{
+	float:left;
+	margin-left:100px;
+	margin-top:10px;
+	width:25%;
+	position:relative;
+}
+
 #nav-header
 {
-	margin-left:130px;
+	margin-left:50px;
 }
 
 #form-search-header
