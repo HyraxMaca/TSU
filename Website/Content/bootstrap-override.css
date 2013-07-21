@@ -21,13 +21,17 @@ small
 .badge-tsu,
 .label-tsu
 {
-	background-color:#660000!important;
+	background-color:#663333!important;
 }
 
 
 /*  navbar settings
 ------------------------------------------------------------------------------------*/
-
+.navbar-inner
+{
+	background-image:none;
+	background-color:#663333!important;
+}
 
 .navbar
 {
@@ -40,6 +44,7 @@ small
 	box-shadow: -3px 3px 4px rgba(0,0,0,0.34);
 	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=-3,OffY=3,Color=#57000000,Positive=true)";
 	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=-3,OffY=3,Color=#57000000,Positive=true);
+	
 }
 
 /*
@@ -62,6 +67,7 @@ small
 	-webkit-border-radius:0px;
 	-moz-border-radius:0px;
 	border:none;
+	
 }
 
 .navbar
@@ -69,6 +75,7 @@ small
 	border-bottom:2px solid #ffc40d;
 	border-top:2px solid #ffc40d;
 	color:#eee;
+	
 }
 
 
@@ -77,7 +84,7 @@ small
 	text-shadow:none;
 	color:#eee;
 	border-collapse:separate;
-	border-top:2px solid #660000;
+	border-top:2px solid #663333;
 	text-align:center;
 	min-width:60px;
 	font-size:14px;
