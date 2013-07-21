@@ -13,19 +13,35 @@
 </head>
 <body>
 	<header>
-		<div class="navbar navbar-fixed-top active-link-toggle">
+		<div class="banner">
+			<div class="banner-inner container">
+				<div class="container">
+					<a id="tsu-logo" class="brand" href="@Url.Action("Index", "Home")">
+							<img src="~/Images/Logos/tsu-logo.png" />
+						</a>
+					<img id="tsu-text" src="~/Images/Logos/tsu_text_maroon.png"/>
+
+					<div class="other-links">
+						<ul class="nav nav-pills">
+							<li><a href="#">Student </a></li>
+							<li><a href="#">Faculty </a></li>
+							<li><a href="#">Alumni </a></li>
+							<li><a href="#">Staff </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar navbar-static-top">
 			<div class="navbar-inner">
 				<div id="nav-container" class="container">
-					<a id="tsu-logo" class="brand" href="@Url.Action("Index", "Home")">
-						<img src="~/Images/Logos/tsu-logo.png" />
-					</a>
-					<img id="tsu-text" src="~/Images/Logos/tsu_text_white.png"/>
-					<ul id="nav-header" class="nav offset1">
-						<li><a href="@Url.Action("Index", "Home")">Home</a></li>
-						<li><a href="@Url.Action("Index", "Admission")">Admission </a></li>
-						<li><a href="@Url.Action("CoursesOffered", "Home")">Courses Offered </a></li>
-						<li><a href="#">About </a></li>
-						<li><a href="#">Contact </a></li>
+					<ul id="nav-header" class="nav">
+						 <li><a href="@Url.Action("Index", "Home")">Home</a></li> 
+						| <li><a href="@Url.Action("Index", "Admission")">Admissions </a></li> 
+						| <li><a href="@Url.Action("CoursesOffered", "Home")"> Academics </a></li> 
+						| <li><a href="@Url.Action("CoursesOffered", "Home")"> Research </a></li> 
+						| <li><a href="#">About </a></li> 
+						| <li><a href="#">Contact </a></li> 
 					</ul>
 
 					<form id="form-search-header" class="form-search pull-right">

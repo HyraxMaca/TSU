@@ -63,7 +63,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd6d6d6,endCol
 body
 {
 	/*background:url("images/patterns/white_wall_hash.png") repeat;*/
-	background:#fff;
+	background:#fefefe;
 	height:100%;
 	font-size:12px;
 	color:#111;
@@ -84,32 +84,16 @@ hr
 
 /* Navigation Settings
 ----------------------------------------------------------------------*/
-#nav-container
+
+#navbar-container
 {
-	/*padding-left:190px;*/
+	
 }
 
-
-
-#tsu-logo
+#nav-header li
 {
-	position:absolute;
-	margin-top:-10px;
-
-}
-
-#tsu-text
-{
-	float:left;
-	margin-left:100px;
-	margin-top:10px;
-	width:25%;
-	position:relative;
-}
-
-#nav-header
-{
-	margin-left:50px;
+	float:none;
+	display:inline-block;
 }
 
 #form-search-header
@@ -133,9 +117,56 @@ hr
 }
 
 
-.nav
+.banner
 {
-	font-size:12px;
+	padding:10px;
+}
+
+.banner-inner
+{
+}
+
+
+#tsu-logo
+{
+	width:80px;
+	position:relative;
+}
+
+#tsu-text
+{
+	width:30%;
+	position:relative;
+}
+
+.other-links
+{
+	float:right;
+}
+
+.other-links a
+{
+	min-width:50px;
+	text-align:center;
+	font-size:14px;
+	color:#660000;
+	font-variant:small-caps;
+}
+
+.other-links li a:hover
+{
+	color: #ffc40d;
+	background:none;
+}
+
+.other-links li
+{
+	border-left:1px solid #f3f3f3;
+}
+
+.other-links li:last-child
+{
+	border-right:1px solid #f3f3f3;
 }
 
 /*####################################################################################################	
@@ -143,7 +174,7 @@ hr
 #####################################################################################################*/
 #body
 {
-	margin-top:110px;
+	margin-top:20px;
 }
 
 .featured
